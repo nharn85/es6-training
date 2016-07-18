@@ -2,9 +2,90 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ES6.io Training</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>ES6.io Training - Let & Const</title>
 </head>
 <body>
+<h1>ES6 Training</h1>
 
+<!-- 01 - var scoping refresher -->
+<script>
+	// function setWidth(){
+	// 	var width = 100;
+	// 	console.log(width);
+	// }
+	// setWidth();
+
+	// // Let and const will only work within block scope rather than function scope
+	// var age = 100;
+	// if (age > 12) {
+	// 	let dogYears = age * 7;
+	// 	console.log(`You are ${dogYears} years old!`);
+	// }
+
+	// let height = 200;
+	// const key = "abc123";
+</script>
+
+<!-- 02 - let vs const -->
+<script>
+	// const key = "abc123";
+	// let points = 50;
+	// let winner = false;
+
+	// //let points = 60; //cannot declare twice
+
+	// if(points > 40){
+	// 	console.log('it ran');
+	// 	let winner = true; //this is in its own scope
+	// 	// update without let infront
+	// }
+
+	// //key = "abc1234"; //const CANNOT be updated
+	// const person = {
+	// 	name: 'Nicole',
+	// 	age: '31'
+	// }
+	// //person = {name: "Nicole Dawn"} will not work but
+	// //person.name will
+	// //attr in object can change but object as a whole cannot
+</script>
+
+<!-- 03 - let & const in the real world -->
+<script>
+
+//IIFE
+// http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+
+// (function(){
+// 	var name = "Nicole";
+// 	console.log(name);
+// })();
+
+// {
+// 	const name = "Matt";
+// 	console.log(name);
+// }
+
+// //var will overwrite but let will keep scope
+// for (var i = 0; i < 10; i++) {
+// 	console.log(i);
+// 	setTimeout(function(){
+// 		console.log('The number is ' + i);
+// 	}, 1000);
+// }
+
+// for (let i = 0; i < 10; i++) {
+// 	console.log(i);
+// 	setTimeout(function(){
+// 		console.log('The number is ' + i);
+// 	}, 1000);
+// }
+</script>
+
+<!-- 04 - temporal dead zone -->
+<script>
+
+</script>
 </body>
 </html>
